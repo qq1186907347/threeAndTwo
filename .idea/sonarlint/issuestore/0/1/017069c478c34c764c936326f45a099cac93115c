@@ -1,0 +1,58 @@
+
+Bsquid:S1068%"+Remove this unused "subject" private field.(±×½ä
+rsquid:S2068/"V'password' detected in this expression, review this potentially hard-coded credential.(¾ÊÔäıÿÿÿÿ
+rsquid:S00115-"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(öéõÌ
+hsquid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(»ˆ¨Ãûÿÿÿÿ
+usquid:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ôû€Òıÿÿÿÿ
+4squid:S1643ü"Use a StringBuilder instead.(¯—ÑÃ
+csquid:CommentedOutCodeLineÏ"<This block of commented-out lines of code should be removed.(Ëƒå‰
+hsquid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(ÖÄö®ÿÿÿÿÿ
+csquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(ã¢»ª
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚Ô¤Õ
+csquid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(£©Á‡
+dsquid:S00112š"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»üÇK
+P
+squid:S106º"9Replace this use of System.out or System.err by a logger.(İšøù
+hsquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(İ¯äúÿÿÿÿ
+rsquid:S00115'"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(š¸Üÿ
+asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(àÿÌS
+^squid:S3027ö"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(É
+rsquid:S00115%"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±×½ä
+Csquid:S1075÷"&Remove this hard-coded path-delimiter.(İÑáîûÿÿÿÿ
+csquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(ßÏ«å
+P
+squid:S106½"9Replace this use of System.out or System.err by a logger.(µÈ 
+>squid:S1075ü"&Remove this hard-coded path-delimiter.(¯—ÑÃ
+hsquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.( öŞØøÿÿÿÿ
+fsquid:S1192c"ODefine a constant instead of duplicating this literal "unSupportEmail" 3 times.(·¿ı
+csquid:S3027ş"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(óœŞøıÿÿÿÿ
+hsquid:CommentedOutCodeLineí"<This block of commented-out lines of code should be removed.(ïŠ¢áûÿÿÿÿ
+csquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(¿Ô¼Í
+rsquid:S00115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾Ã„ç
+Csquid:S1075€"&Remove this hard-coded path-delimiter.(ªËÿÿÿÿÿ
+@squid:S1148¼"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+wsquid:S00115)"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(µø¶Ãúÿÿÿÿ
+csquid:S00112j"FDefine and throw a dedicated exception instead of using a generic one.(¨¯™‘ûÿÿÿÿ
+csquid:S00112n"FDefine and throw a dedicated exception instead of using a generic one.(ûâı‚øÿÿÿÿ
+hsquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(êÇóãÿÿÿÿÿ
+hsquid:CommentedOutCodeLineÊ"<This block of commented-out lines of code should be removed.(ïŠ¢áûÿÿÿÿ
+hsquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(•Öã´ùÿÿÿÿ
+csquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(Ã“­³
+hsquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(ïŠ¢áûÿÿÿÿ
+csquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(òĞ¤ı
+hsquid:CommentedOutCodeLineÜ"<This block of commented-out lines of code should be removed.(™šßüÿÿÿÿ
+csquid:S00112`"FDefine and throw a dedicated exception instead of using a generic one.(°ÃñŞıÿÿÿÿ
+hsquid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(î™Ïÿÿÿÿÿ
+hsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(¦œòºúÿÿÿÿ
+esquid:S1192˜"MUse already-defined constant 'charSet' instead of duplicating its value here.(ÓñşÜ
+hsquid:CommentedOutCodeLineº"<This block of commented-out lines of code should be removed.(ïŠ¢áûÿÿÿÿ
+hsquid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(Ã”çÖûÿÿÿÿ
+wsquid:S00115/"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¾ÊÔäıÿÿÿÿ
+P
+squid:S106œ"9Replace this use of System.out or System.err by a logger.(ÏŒ§÷
+csquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(ù‘¾Ë
+>squid:S1659ù"!Declare "end" on a separate line.(Û‚ÌÎøÿÿÿÿ
+csquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(²ÛÑÇ
+gsquid:S3027"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(ŠûÔ‘øÿÿÿÿ
+^squid:S3027ú"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(ø¯”ß
