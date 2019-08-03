@@ -21,7 +21,7 @@
 
     <!--新用户注册  方式1-->
     <insert id="adduser" parameterType="user" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO user (username,password,age) VALUES (#{username},#{password},#{age})
+        INSERT INTO user (id,username,password,age) VALUES (uuid(),#{username},#{password},#{age})
     </insert>
 
     <select id="queryAllUser" resultType="User">

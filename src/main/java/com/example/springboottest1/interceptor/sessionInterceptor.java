@@ -24,6 +24,7 @@ public class sessionInterceptor implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("userLogin");
-        registry.addViewController("/register").setViewName("register");
+        registry.addViewController("/register.html").setViewName("register");
+        registry.addViewController("/other/index.html").setViewName("index");
     }
 }
