@@ -1,6 +1,7 @@
 package com.example.springboottest1.controller;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping(value = {"/springboot"})
-    public String hello(HashMap<String, Object> map, Model model){
+    public String hello(Map<String, Object> map, Model model){
         model.addAttribute("say","欢迎欢迎,热烈欢迎");
         map.put("hello", "欢迎进入HTML页面");
         return "HelloWord";

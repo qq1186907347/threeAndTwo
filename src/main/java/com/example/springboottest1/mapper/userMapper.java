@@ -33,6 +33,6 @@ public interface userMapper {
     int adduser1(@Param("username") String username, @Param("password") String password, @Param("age") int age);
 
     //查询用户列表
-    List<Map<String,Object>> queryAllUser();
+    List<User> queryAllUser();
 
 }

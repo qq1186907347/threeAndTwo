@@ -9,17 +9,13 @@
       <result column="age" property="age" jdbcType="INTEGER" />
     </resultMap>
 
-    <sql id="Base_Column_List" >
+    <!--用户登录验证-->
+    <select id="userlogin" parameterType="user" resultType="User">
+        SELECT
         id,
         username,
         password,
         age
-    </sql>
-
-    <!--用户登录验证-->
-    <select id="userlogin" parameterType="user" resultType="User">
-        SELECT
-        <include refid="Base_Column_List" />
         FROM user WHERE username = #{username} AND password = #{password}
     </select>
 
@@ -33,10 +29,12 @@
         INSERT INTO user (id,username,password,age) VALUES (uuid(),#{username},#{password},#{age})
     </insert>
 
-    <select id="queryAllUser" resultType="map">
+    <select id="queryAllUser" resultType="User">
         SELECT
-        <include refid="Base_Column_List" />
+        id,
+        username,
+        password,
+        age
         FROM user
     </select>
-
 </mapper>

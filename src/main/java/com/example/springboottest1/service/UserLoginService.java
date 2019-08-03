@@ -33,8 +33,11 @@ public class UserLoginService {
         return usermapper.adduser1(username,password,age);     //对应sql语句中的第二种注册方式
     }
 
-    //查询用户列表
-    public List<Map<String,Object>> queryAllUser(){
+    /**
+     * 获取所有用户信息
+     * @return 用户信息
+     */
+    public List<User> queryAllUser(){
         return usermapper.queryAllUser();
     }
 }
