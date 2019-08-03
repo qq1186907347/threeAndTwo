@@ -1,25 +1,25 @@
 package com.example.springboottest1.controller;
 
 import com.example.springboottest1.entity.User;
-import com.example.springboottest1.service.UserLoginService;
+import com.example.springboottest1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping(value = {"/user"})
 public class UserController {
-    private UserLoginService userLoginService;
+    private UserService userService;
 
     @Autowired
-    public UserController(UserLoginService userLoginService) {
-        this.userLoginService = userLoginService;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
 
@@ -66,7 +66,7 @@ public class UserController {
             return "密码不能为空";
         }
 
-        User user = userLoginService.userLogin(username, password);
+        User user = userService.userLogin(username, password);
         //登录成功
         if (user != null) {
             //将用户信息放入session  用于后续的拦截器
@@ -82,7 +82,7 @@ public class UserController {
      * @return 注册结果
      */
     @ResponseBody
-    @RequestMapping(value = {"/uregister"})
+    @RequestMapping(value = {"/register"})
     public String addUser(@RequestParam("username") String username,
                           @RequestParam("password") String password,
                           @RequestParam("password2") String password2,
@@ -103,7 +103,11 @@ public class UserController {
         if (!password.equals(password2)) {
             return "两次密码不相同，注册失败！！";
         } else {
-            int res = userLoginService.adduser(username, password, age);
+            User user = new User();
+            user.setUsername(username);
+            user.setPassword(password);
+            user.setAge(age);
+            int res = userService.adduser(user);
             if (res == 0) {
                 return "注册失败！";
             } else {
@@ -113,9 +117,11 @@ public class UserController {
 
     }
 
-    @RequestMapping(value = {"/user-list"})
-    public String hello(Model model) {
-        model.addAttribute("users", userLoginService.queryAllUser());
-        return "userList";
+    @RequestMapping(value = {"/list"})
+    public  ModelAndView userList() {
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.addObject("users", userService.queryAllUser());
+        modelAndView.setViewName("userList.html");
+        return  modelAndView;
     }
 }
