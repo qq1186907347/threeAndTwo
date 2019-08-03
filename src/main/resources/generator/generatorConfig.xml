@@ -20,21 +20,19 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成(实体)模型的包名和位置-->
-        <javaModelGenerator targetPackage="com.example.springboottest1.entity" targetProject="src">
+        <javaModelGenerator targetPackage="com.example.springboottest1.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 生成XML映射文件的包名和位置-->
-        <sqlMapGenerator targetPackage="resources.mapper" targetProject="src">
+        <sqlMapGenerator targetPackage="src/main/resources" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO接口的包名和位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.springboottest1.mapper" targetProject="src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.springboottest1.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-        <table tableName="user" domainObjectName="user" enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
         <table tableName="my_test" domainObjectName="my_test" enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
